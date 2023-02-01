@@ -38,8 +38,6 @@ spec:
     files:
     - from: pvmigrate
       to: .
-    - from: LICENSE
-      to: .
     bin: pvmigrate
   - selector:
       matchLabels:
