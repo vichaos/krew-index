@@ -31,6 +31,18 @@ spec:
     bin: pvmigrate
   - selector:
       matchLabels:
+        os: darwin
+        arch: arm64
+    uri: https://github.com/vichaos/pvmigrate/releases/download/v0.7.0/pvmigrate_darwin_arm64.tar.gz
+    sha256: e1148df3e05bc83bd9e80446d5f9f62388c90839e59794d131f8b82f8d38c5c8
+    files:
+    - from: pvmigrate
+      to: .
+    - from: LICENSE
+      to: .
+    bin: pvmigrate
+  - selector:
+      matchLabels:
         os: windows
         arch: amd64
     uri: https://github.com/replicatedhq/pvmigrate/releases/download/v0.7.0/pvmigrate_windows_amd64.zip
